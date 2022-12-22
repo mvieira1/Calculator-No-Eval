@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(235, 235, 235);
+}
+
+.calculator-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 125px repeat(5, 80px); /* a primeira linha tem 125px de largura/altura e as restantes 5 têm 80px */
+    gap: 12px; /* column-gap = row-gap = 12px */
+}
+
+.display{
+    grid-column: span 4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.384) inset, -4px -4px 5px  rgba(255,255,255, 0.5) inset;
+    border-radius: 20px;
+    margin-bottom: 20px; /*a acrescentar aos 12px do row-gap = 32px de espaçamento entre o div.display e o keyboard de button's*/
+}
+
+.previous-display{
+    text-align: end;
+    color: rgb(100, 100, 100);
+}
+
+.current-display{
+    text-align: end;
+    font-size: 1.8rem;
+    color: rgb(20, 20, 20);
+}
+
+button{
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.384) inset, -4px -4px 5px  rgba(255,255,255, 0.5) inset;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.grey-operator{
+    background-color: rgb(155, 155, 155);
+    color: rgb(20, 20, 20);
+}
+
+.grey-operator:hover{
+    background-color: rgb(175, 175, 175);
+}
+
+.orange-operator{
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+
+.orange-operator:hover{
+    background-color: rgb(255, 135, 20);
+}
+
+.number{
+    background-color: rgb(235, 235, 235);
+    color: rgb(20, 20, 20);
+}
+
+.number:hover{
+    background-color: rgb(255, 255, 255);
+}

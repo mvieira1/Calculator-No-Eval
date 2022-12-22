@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-no-eval</title>
+    <!-- Font External Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- CSS External File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript External File -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="calculator-grid">
+        <div class="display">
+            <div class="previous-display" data-previous-display></div>
+            <div class="current-display" data-current-display></div>
+        </div>
+
+        <button class="clear-all grey-operator span-two" data-clear-all>C</button>
+        <button class="clear-entry grey-operator" data-clear-entry>CE</button>
+        <button class="orange-operator" data-operator>/</button>
+        <button class="number" data-number>7</button>
+        <button class="number" data-number>8</button>
+        <button class="number" data-number>9</button>
+        <button class="orange-operator" data-operator>*</button>
+        <button class="number" data-number>4</button>
+        <button class="number" data-number>5</button>
+        <button class="number" data-number>6</button>
+        <button class="orange-operator" data-operator>-</button>
+        <button class="number" data-number>1</button>
+        <button class="number" data-number>2</button>
+        <button class="number" data-number>3</button>
+        <button class="orange-operator" data-operator>+</button>
+        <button class="number span-two" data-number>0</button>
+        <button class="number" data-number>.</button>
+        <button class="orange-operator" data-equals>=</button>
+
+        <!-- Podia ter atribuído só classes, em vez de data-* attributes. No entanto, seria bastante confuso distinguir entre as classes cujo propósito é o styling do elemento e aquelas que se destinam à introdução de interatividade, em JavaScript. Para essa função, escolhi data-* attributes. Não podia ter escolhido id's pq teriam de ser diferentes em todos os elementos e isso, em vez de simplificar, iria ainda dificultar mais -->
+        
+    </div>
+</body>
+
+</html>
